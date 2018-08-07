@@ -10,7 +10,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.junit.Test;
+import org.junit.*;
 import kafka.admin.AdminUtils;
 import kafka.admin.RackAwareMode;
 import kafka.server.KafkaConfig;
@@ -31,6 +31,7 @@ public class KafkaProducerIT {
     private static final String BROKERPORT = "9092";
     private static final String TOPIC = "test";
 
+    @Ignore
     @Test
     public void producerTest() throws InterruptedException, IOException {
 
