@@ -8,8 +8,8 @@ import java.util.*;
 import static org.junit.Assert.*;
 
 public class SQSRouterClientIT {
-    String accessKeyId = "AKIAIR6X6JV3IE3T2AOA";
-    String secretKey = "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";
+    String accessKeyId = System.getProperty("sqsrouterclientit.accessKey");
+    String secretKey = System.getProperty("sqsrouterclientit.secretKey");
     String ACCOUNT = "168048946553";
     String QUEUE_NAME = "demo.fifo";
     
